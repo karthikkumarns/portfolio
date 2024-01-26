@@ -1,0 +1,208 @@
+/* .main-color {
+  color: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #efefef;
+}
+button {
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.neumorphic {
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  width: 400px;
+  height: 100px; 
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.3rem;
+  padding-left: 5.3rem;
+  padding-right: 5.3rem;
+  display: flex;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+.neumorphic--pressed {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.variation2 {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.variation2.pressed {
+  color: #02080b;
+}
+.cardnav{
+  display: flex;
+  margin-bottom: 20px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 50px;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+  }
+}
+
+.card-w {
+  display: flex;
+  margin-bottom: 20px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+    border-radius: 30px;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+
+    .card__text {
+      text-align: center;
+    }
+  }
+}
+
+.neumorphism {
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+  -9px -9px 16px rgb(255 255 255 / 50%),
+  inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #ffffff;
+  transition: all 250ms ease-in-out;
+
+ 
+  &:hover {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  
+}
+
+   
+}
+
+.card.active {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5),
+    inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #ffffff;
+  background: linear-gradient(318.32deg, #efefef 0%, #efefef 55%, #efefef 100%);
+}
+
+
+.bevel {
+  align-items: center;
+  border-radius: 12px;
+  box-shadow:
+      3px 3px 6px 3px rgba(0, 0, 0, 0.1),
+      -3px -3px 3px 3px rgba(247, 251, 255, 0.5),
+      3px 3px 8px 2px rgba(0, 0, 0, 0) inset,
+      -3px -3px 7px 2px rgba(247, 251, 255, 0) inset;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 24px;;
+  transition: border 0.1s ease, box-shadow 0.1s ease;
+  margin: 5rem;
+}
+
+
+
+.m_button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  cursor:pointer;
+  background-color:#eeeeee;
+  width:80px;
+  height:80px;
+  border-radius:10px;
+  box-shadow: -7px -7px 20px 0px #fff9,
+              -4px -4px 5px 0px #fff9,
+              7px 7px 20px 0px #0002,
+              4px 4px 5px 0px #0001,
+              inset 0px 0px 0px 0px #fff9,
+              inset 0px 0px 0px 0px #0001,
+              inset 0px 0px 0px 0px #fff9,
+              inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  span{
+    background-color:lightcoral;
+    box-shadow: 0px 0px 10px 0px rgba(240,128,128,0.3);
+    width:40px;
+    height:4px;
+    border-radius:4px;
+    margin:3px 0px 3px 0px;
+    transition:margin 0.4s cubic-bezier(.79,.21,.06,.81),transform 0.4s cubic-bezier(.79,.21,.06,.81);
+  }
+    
+  span:nth-child(2){
+    transform-origin:50% 50%;
+  }
+} */
+
+/* .active .m_button{
+  box-shadow: 0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #fff9,
+              0px 0px 0px 0px #0001,
+              0px 0px 0px 0px #0001,
+              inset -7px -7px 20px 0px #fff9,
+              inset -4px -4px 5px 0px #fff9,
+              inset 7px 7px 20px 0px #0003,
+              inset 4px 4px 5px 0px #0001;
+  span{
+    margin:-2px;
+  }
+  span:nth-child(1){
+    transform:rotate(-45deg);
+    
+  }
+  span:nth-child(2){
+    transform:scale(0)
+  }
+  span:nth-child(3){
+    transform:rotate(45deg)
+  }
+} */

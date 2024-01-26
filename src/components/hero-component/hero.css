@@ -1,0 +1,286 @@
+.main-container {
+  height: 100vh;
+  background-color: #eef5ff;
+  scroll-behavior: smooth;
+}
+.logo-image-container-1 {
+  height: 70px;
+}
+.logo-image-container-2 {
+  height: 60px;
+}
+.nav-main-container {
+  top: 1rem;
+  z-index: 5;
+}
+.nav-sub-container {
+  position: relative;
+  border-radius: 30px;
+  background-color: #efefef;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #176b87;
+  text-transform: uppercase;
+}
+.nav-name {
+  font-size: 20px;
+}
+.nav-text-container {
+  font-size: 16px;
+  color: #176b8795;
+}
+.nav-text-container:hover {
+  font-size: 16px;
+  color: #176b87;
+}
+.nav-menu {
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  border: none;
+  background-color: #e0e5ec;
+}
+.neumorphism {
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%),
+    inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #ffffff;
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+}
+.hero-container {
+  height: calc(100% - 25%);
+  font-size: 45px;
+  font-weight: 500;
+  color: #176b87;
+}
+.hero-sub-heading {
+  font-size: 16px;
+}
+.hero-button {
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #176b87;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.4),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+.hero-button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero-button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.main-float {
+  box-shadow: 0 0 3px 1px #1818183d, 2px 2px 3px #18181865,
+    inset 2px 2px 2px #ffffff;
+  background: #efefef;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+.css-float {
+  top: 10%;
+  left: 0;
+}
+.html-float {
+  top: 80%;
+  left: 0;
+}
+.js-float {
+  top: 50%;
+  left: 200px;
+  max-width: 110px;
+  rotate: -20deg;
+}
+.next-float {
+  top: 25%;
+  right: 0;
+  rotate: -10deg;
+}
+.react-float {
+  top: 65%;
+  right: 0;
+  rotate: -10deg;
+}
+
+@keyframes cssfloat {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(40px);
+    rotate: 10deg;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes htmlfloat {
+  0% {
+    transform: translateX(0);
+    rotate: 10deg;
+  }
+
+  50% {
+    transform: translateX(80px);
+    rotate: 20deg;
+  }
+
+  100% {
+    transform: translateX(0);
+    rotate: 10deg;
+  }
+}
+
+@keyframes jsfloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nextfloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes reactfloat {
+  0% {
+    transform: translateX(0);
+    rotate: 10deg;
+  }
+
+  50% {
+    transform: translateX(-80px);
+    rotate: 20deg;
+  }
+
+  100% {
+    transform: translateX(0);
+    rotate: 10deg;
+  }
+}
+
+.float-animation {
+  animation: cssfloat 15s ease-in-out infinite;
+}
+.float-html-animation {
+  animation: htmlfloat 22s ease-in-out infinite;
+}
+.float-js-animation {
+  animation: jsfloat 7s ease-in-out infinite;
+}
+.float-next-animation {
+  animation: nextfloat 10s ease-in-out infinite;
+}
+
+.float-react-animation {
+  animation: reactfloat 18s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-image-container-1 {
+    height: 60px;
+  }
+  .logo-image-container-2 {
+    height: 50px;
+  }
+  .html-float {
+    top: 85%;
+    left: 0;
+  }
+  .js-float {
+    top: 63%;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-image-container-1 {
+    height: 50px;
+  }
+  .logo-image-container-2 {
+    height: 45px;
+  }
+  .hero-container {
+    font-size: 28px;
+  }
+  .html-float {
+    top: 82%;
+  }
+  .next-float {
+    top: 15%;
+  }
+  .react-float {
+    top: 75%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-container {
+    font-size: 24px;
+  }
+  .hero-sub-heading {
+    font-size: 14px;
+  }
+  .nav-name {
+    font-size: 18px;
+  }
+  .hero-button {
+    font-size: 14px;
+  }
+  .logo-image-container-1 {
+    height: 40px;
+  }
+  .logo-image-container-2 {
+    height: 35px;
+  }
+  .css-float {
+    top: 0;
+  }
+  .html-float {
+    top: 80%;
+  }
+  .js-float {
+    top: 16%;
+  }
+  .next-float {
+    top: 0%;
+  }
+}

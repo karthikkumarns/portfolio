@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./hero.css";
 import css from "../../assets/images/css.png";
 import html from "../../assets/images/html.png";
 import js from "../../assets/images/js.webp";
 import next from "../../assets/images/next.png";
 import react from "../../assets/images/React-icon.svg.png";
-import menu from "../../assets/icon/menu.svg";
-import SideBarComponent from "../sidebar/side-bar";
 
 const HeroComponent = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const cssElement = document.getElementById("css");
@@ -45,31 +41,9 @@ const HeroComponent = () => {
     };
   }, []);
 
-  return (
-    <div className="main-container position-relative">
-      <div className="nav-main-container col-xl-9 col-11 mx-auto py-3 position-sticky">
-        <nav className="nav-sub-container neumorphism p-md-3 p-2 px-lg-5 px-4 d-flex justify-content-between align-items-center ">
-          <div className="font-cursive fw-500 cursor_none nav-name">
-            Karthik Kumar N S
-          </div>
-          <button
-            onClick={() => setSidebarOpen(true)}
-            className="d-md-none nav-menu p-1 px-2 my-1 rounded-3"
-          >
-            <img src={menu} height={18} alt="menu" />
-          </button>
-          <div className="d-none d-md-block">
-            <div className="d-flex align-items-center gap-4 cursor_pointer">
-              <div className="nav-text-container">Home</div>
-              <div className="nav-text-container">About</div>
-              <div className="nav-text-container">Projects</div>
-              <div className="nav-text-container">contact</div>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <section className="w-100 overflow-hidden h-100">
-        <section className="d-flex justify-content-center align-items-center hero-container m-5 col-xl-9 mx-auto position-relative">
+  return (    
+      <section className="w-100 overflow-hidden hero-main-container">
+        <section className="d-flex justify-content-center align-items-center hero-container col-xl-9 mx-auto position-relative h-100">
           <div>
             <div
               id="css"
@@ -137,9 +111,9 @@ const HeroComponent = () => {
               />
             </div>
           </div>
-          <div className="m-3 text-center text-md-start">
+          <div className="m-3 text-center ">
             <>
-              Hey , I'm <span className="font-cursive">KARTHIK KUMAR N S </span>
+              Hey , I'm <span className="font-cursive">KARTHIK KUMAR</span>
               <p className="hero-sub-heading font-montserrat">
                 I like to code things from scratch, and enjoy bringing ideas to
                 life in the browser.
@@ -153,11 +127,7 @@ const HeroComponent = () => {
           </div>
         </section>
       </section>
-      <SideBarComponent
-        show={sidebarOpen}
-        handleClose={() => setSidebarOpen(false)}
-      />
-    </div>
+ 
   );
 };
 

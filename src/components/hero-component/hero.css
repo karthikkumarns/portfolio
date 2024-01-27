@@ -1,57 +1,14 @@
-.main-container {
-  height: 100vh;
-  background-color: #eef5ff;
-  scroll-behavior: smooth;
-}
+
 .logo-image-container-1 {
   height: 70px;
 }
 .logo-image-container-2 {
   height: 60px;
 }
-.nav-main-container {
-  top: 1rem;
-  z-index: 5;
+.hero-main-container{
+  height: calc(100% - 10.8%);
 }
-.nav-sub-container {
-  position: relative;
-  border-radius: 30px;
-  background-color: #efefef;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #176b87;
-  text-transform: uppercase;
-}
-.nav-name {
-  font-size: 20px;
-}
-.nav-text-container {
-  font-size: 16px;
-  color: #176b8795;
-}
-.nav-text-container:hover {
-  font-size: 16px;
-  color: #176b87;
-}
-.nav-menu {
-  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
-    5px 5px 9px rgba(94, 104, 121, 0.3);
-  border: none;
-  background-color: #e0e5ec;
-}
-.neumorphism {
-  background-color: #e0e5ec;
-  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
-    -9px -9px 16px rgb(255 255 255 / 50%),
-    inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #ffffff;
-  transition: all 250ms ease-in-out;
-
-  &:hover {
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-      -9px -9px 16px rgba(255, 255, 255, 0.5);
-  }
-}
-.hero-container {
-  height: calc(100% - 25%);
+.hero-container {  
   font-size: 45px;
   font-weight: 500;
   color: #176b87;

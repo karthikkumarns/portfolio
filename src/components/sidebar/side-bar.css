@@ -25,3 +25,12 @@
   max-width: 180px;
   position: relative;
 }
+.close-btn {
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  border: none;
+  background-color: #e0e5ec;
+  cursor: pointer;
+  right: 0.7rem;
+  top: 1.5rem;
+}

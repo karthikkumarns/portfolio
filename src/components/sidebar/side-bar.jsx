@@ -18,7 +18,7 @@ const SideBarComponent = ({ show, handleClose }) => {
       <section className="sidebar-main-container h-100 p-4">
         <div className="text-center d-flex flex-column">
           {sidebarList?.map((item, index) => (
-            <button className="sidebar-list-container rounded-2 text-center w-75 mx-auto p-2 my-2">
+            <button key={index} className="sidebar-list-container rounded-2 text-center w-75 mx-auto p-2 my-2">
               {item?.name}
             </button>
           ))}

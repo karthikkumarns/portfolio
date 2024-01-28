@@ -1,11 +1,7 @@
-.nav-main-container {
-  top: 1rem;
-  z-index: 5;
-}
+
 .nav-sub-container {
   position: relative;
   border-radius: 30px;
-  background-color: #efefef;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #176b87;
   text-transform: uppercase;
@@ -25,7 +21,7 @@
   box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
     5px 5px 9px rgba(94, 104, 121, 0.3);
   border: none;
-  background-color: #e0e5ec;
+  /* background-color: #e0e5ec; */
 }
 .neumorphism {
   background-color: #e0e5ec;
@@ -44,4 +40,22 @@
   .nav-name {
     font-size: 18px;
   }
+}
+
+.nav-main-container{
+  top: 1rem;
+  z-index: 5;
+  border: 1px solid #fff;
+  background-color: #f6f5f0;
+  border-radius: 40px;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.finder__outer {
+  display: flex;
+  width: 600px;
+  /* padding: 1.5rem 2rem; */
+  border-radius: 40px;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #ffffff;
 }

@@ -7,8 +7,8 @@ const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
-      <div className="nav-main-container col-xl-9 col-11 mx-auto py-3 position-sticky">
-        <nav className="nav-sub-container neumorphism p-md-3 p-2 px-lg-5 px-4 d-flex justify-content-between align-items-center ">
+      <nav className="nav-main-container col-xl-9 col-11 mx-auto position-sticky p-1">
+        <div className="nav-sub-container finder__outer w-100 px-md-4 px-3 py-md-3 py-2 d-flex justify-content-between align-items-center">
           <div className="font-cursive fw-500 cursor_none nav-name">
             Karthik Kumar
           </div>
@@ -26,8 +26,9 @@ const Navbar = () => {
               <div className="nav-text-container">contact</div>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
       <SideBarComponent
         show={sidebarOpen}
         handleClose={() => setSidebarOpen(false)}

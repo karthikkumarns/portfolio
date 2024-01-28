@@ -2,14 +2,17 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HeroComponent from "./components/hero-component/hero-component";
 import Navbar from "./components/navbar/navbar";
+import ProjectsComponent from "./components/projects/projects-component";
 
 function App() {
   return (
     <div className="main-container">
-      <Navbar />
-      <HeroComponent />
-      <div className="bg-warning" style={{height:"100vh"}}>
+      <div className="position-relative h-100 py-2">
+        <Navbar />
+        <HeroComponent />
       </div>
+
+      <ProjectsComponent />
     </div>
   );
 }

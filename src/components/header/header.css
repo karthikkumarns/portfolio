@@ -1,0 +1,19 @@
+.header-container {
+  border: 1px solid #fff;
+  background-color: #f6f5f0;
+  border-radius: 40px;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.header-container-outer {
+  display: flex;
+  border-radius: 40px;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #ffffff;
+}
+
+.header-title {
+  font-size: 26px;
+  color: #176b87;
+}
